@@ -1,0 +1,11 @@
+.app{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+@media screen and (max-width: 685px) {
+    .app{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,90 @@
+.filter_container {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 180px;
+}
+@media screen and (max-width: 685px) {
+    .filter_container {
+        position: fixed;
+        top: 20px;
+        width: calc(100% - 40px);
+        height: auto
+    }
+
+}
+
+.filter>span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #525252;
+    padding: 10px 0;
+    display: block;
+}
+
+.checkbox_container {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+.developer_badge {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    width: 300px;
+    z-index: 1000;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 875px) {
+    .developer_badge {
+        display: none;
+    }
+}
+
+.badge_content h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.badge_content p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.badge_content a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.badge_content a:hover {
+    text-decoration: underline;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

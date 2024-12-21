@@ -1,0 +1,25 @@
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: auto;
+    border-radius: 8px;
+    padding: 35px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form>div{
+    text-align: center;
+}
+.form>div:nth-child(1) {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
