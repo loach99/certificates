@@ -12272,7 +12272,7 @@
         });
     }, __webpack_require__.hu = chunkId => chunkId + "." + __webpack_require__.h() + ".hot-update.js", 
     __webpack_require__.miniCssF = chunkId => {}, __webpack_require__.hmrF = () => "main." + __webpack_require__.h() + ".hot-update.json", 
-    __webpack_require__.h = () => "ad674642300fd6786db4", __webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop), 
+    __webpack_require__.h = () => "a7cce0b8eac3a4cec9fa", __webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop), 
     inProgress = {}, __webpack_require__.l = (url, done, key, chunkId) => {
         if (inProgress[url]) inProgress[url].push(done); else {
             var script, needAttach;
@@ -12506,7 +12506,7 @@
             }, currentChildModule = void 0, hot), module.parents = currentParents, module.children = [], 
             currentParents = [], options.require = require;
         })), __webpack_require__.hmrC = {}, __webpack_require__.hmrI = {};
-    })(), __webpack_require__.p = "/certificates/", (() => {
+    })(), __webpack_require__.p = "/", (() => {
         if ("undefined" != typeof document) {
             var createStylesheet = (chunkId, fullhref, oldTag, resolve, reject) => {
                 var linkTag = document.createElement("link");
