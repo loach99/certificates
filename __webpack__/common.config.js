@@ -5,11 +5,10 @@ const BUILD_DIR = path.resolve(__dirname, "..", "build");
 const PUBLIC_DIR = path.resolve(__dirname, "..", "public");
 const STATIC_DIR = path.resolve(__dirname, "..", "static");
 
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const FileManagerPlugin = require("filemanager-webpack-plugin");
-
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const plugins = [
   new FileManagerPlugin({
