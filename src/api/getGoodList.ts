@@ -1,6 +1,6 @@
 export const fetchGoodList = async () => {
     try {
-        const response = await fetch("https://sycret.ru/service/api/api", {
+        const response = await fetch("/service/api/api", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
