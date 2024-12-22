@@ -3,7 +3,6 @@ import MyForm from "../../components/Form/Form";
 import styles from './styles/FormPage.module.css'
 import { Link, useLocation } from "react-router";
 const FormPage = () => {
-    
     const location = useLocation();
     const { sertificateName, id, tableName, primaryKey, price, sum } = location.state;
     return (

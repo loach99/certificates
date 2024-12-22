@@ -17,8 +17,9 @@ export interface ICertificate {
     TABLENAME: string;
 }
 export interface IContainerProps {
-    goodList: ICertificate[],
-    handleChexboxChange?: (id: string) => void
+    goodList: ICertificate[];
+    handleChexboxChange?: (id: string) => void;
+    setFilterArr?: (arr: string[]) => void;
 }
 type setIsActiveFunc = (isActive: boolean) => void
 type isActive = boolean

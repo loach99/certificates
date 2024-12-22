@@ -10,7 +10,7 @@ function App() {
   const { data, loading, error } = useGetGoodList();
   const [filterArr, setFilterArr] = useState<string[]>([]);
   const [certificates, setCertificates] = useState<ICertificate[]>(data);
-  
+
   useEffect(() => {
     setCertificates(data)
   }, [data])
@@ -35,14 +35,14 @@ function App() {
       return [...prevSelectedIds, id];
     });
   }
-
+  console.log(filterArr)
   return (
     <div className={styles.app}>
       {loading && <Loader />}
       {error ? <Modal text='Мы пытаемся все починить!'>
         <span>Произошла ошибка при получении данных</span></Modal> :
         <>
-          <Filter handleChexboxChange={handleChexboxChange} goodList={data} />
+          <Filter setFilterArr={setFilterArr} handleChexboxChange={handleChexboxChange} goodList={data} />
           <CertificateList goodList={certificates} />
         </>
       }

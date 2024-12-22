@@ -54,7 +54,7 @@ const MyForm = ({ ID, TABLENAME, PRIMARYKEY, PRICE, SUMMA }: MyFormProps) => {
     return (
         <div>
             {data.length !== 0 && <Modal text='Спасибо за покупку!'>
-                <div>
+                <div className={styles.success}>
                     <div>Ваш заказ успешно создан!</div>
                     <div><Link to={'/'}>Перейти на главную</Link></div>
                 </div>

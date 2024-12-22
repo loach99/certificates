@@ -1,20 +1,34 @@
-import Checkbox from '../Checkbox/Checkbox';
 import styles from './styles/Filter.module.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { IContainerProps } from '../../interfaces/interfaces';
-const Filter = ({ goodList, handleChexboxChange }: IContainerProps) => {
-    if (handleChexboxChange === undefined) return null
+import MultiSelect from '../MultiSelect/MultiSelect';
+export type Option = {
+    value: string;
+    label: string;
+   
+};
+const Filter = ({ goodList, handleChexboxChange, setFilterArr }: IContainerProps) => {
+    const [optionSelected, setSelected] = useState<Option[] | null>();
+    const handleChange = (selected: Option[]) => {
+        setSelected(selected);
+        if(setFilterArr){
+            setFilterArr(selected.map((item) => item.value))
+        }
+       
+    };
+    if (handleChexboxChange === undefined) return null;
     return (
         <div className={styles.filter_container}>
             <div className={styles.filter}>
                 <span>Ваши сертификаты</span>
                 <div className={styles.checkbox_container}>
-                    {goodList.map((item) => {
-                        return (
-                            <Checkbox key={item.ID} id={item.ID} handleChexboxChange={handleChexboxChange} name={item.NAME} />
-                        )
-                    }
-                    )}
+                    <MultiSelect
+                        key="certificates"
+                        onChange={handleChange}
+                        value={optionSelected}
+                        isSelectAll={true}
+                        menuPlacement={"bottom"}
+                        options={goodList.map((item) => ({ label: `на ${item.PRICE} руб`, value: item.ID }))} />
                 </div>
             </div>
             <div className={styles.developer_badge}>

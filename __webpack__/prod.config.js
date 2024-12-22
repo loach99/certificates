@@ -42,7 +42,6 @@ const plugins = [
     },
   }),
 ];
-
 module.exports = merge(common, {
   mode: "production",
   target: "browserslist",

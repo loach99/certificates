@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 const usePhoneMask = () => {
     const [phone, setPhone] = useState('');
     const [phoneError, setError] = useState('');
