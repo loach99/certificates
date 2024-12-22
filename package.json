@@ -52,6 +52,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
     "cra-template-typescript": "^1.2.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.11.0",

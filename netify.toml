@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/service/api/api"
-  to = "https://sycret.ru"
-  status = 200
-  force = true

@@ -1,0 +1,1 @@
+/api/* https://sycret.ru/service/api/:splat 200

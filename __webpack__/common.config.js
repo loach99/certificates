@@ -33,7 +33,16 @@ const plugins = [
     template: path.join(PUBLIC_DIR, "index.html"),
     filename: "index.html",
   }),
-  new webpack.HotModuleReplacementPlugin(), // For page reloading
+  new webpack.HotModuleReplacementPlugin(),
+  new CopyWebpackPlugin({
+    patterns: [
+      { 
+        from: 'public/_redirects.txt', 
+        to: '_redirects',
+        toType: 'file'
+      }
+    ],
+  }),
 ];
 
 if (process.env.SERVE) {
