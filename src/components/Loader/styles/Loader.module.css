@@ -29,3 +29,11 @@
         transform: rotate(360deg);
     }
 }
+@media screen and (max-width: 685px) {
+    .loader{
+        width: 80px;
+        height: 80px;
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #3498db;
+    }
+}

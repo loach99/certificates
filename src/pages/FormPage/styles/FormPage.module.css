@@ -17,9 +17,18 @@
 .form>div{
     text-align: center;
 }
+.form>div>a{
+    text-decoration: none;
+    color: #5e9ae9;
+}
 .form>div:nth-child(1) {
     border-bottom: 1px solid #ddd;
     padding-bottom: 15px;
     margin-bottom: 15px;
     font-size: 20px;
+}
+@media screen and (max-width: 685px) {
+    .form>div:nth-child(1) {
+        font-size: 18px;
+    }
 }

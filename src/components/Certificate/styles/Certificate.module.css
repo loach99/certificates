@@ -1,56 +1,106 @@
-.certificate{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.certificate {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: ani .5s forwards;
 }
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .certificate>h2 {
+    font-size: 16px;
+  }
+
+}
+
 .certificate_card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 300px;
-    text-align: center;
-  }
-  
-  .certificate_card h2 {
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.certificate_card h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.price {
+  font-size: 1.2rem;
+}
+
+.original_price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 10px;
+}
+
+.discounted_price {
+  color: #d9534f;
+  font-weight: 600;
+}
+
+.discount_info {
+  font-size: 1rem;
+  color: #5bc0de;
+}
+
+
+
+.buy_button {
+  background-color: #5cb85c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+
+.buy_button:hover {
+  background-color: #4cae4c;
+}
+
+@media screen and (max-width: 685px) {
+
   .price {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
-  
+
   .original_price {
     text-decoration: line-through;
     color: #888;
     margin-right: 10px;
   }
-  
+
   .discounted_price {
     color: #d9534f;
     font-weight: 600;
   }
-  
+
   .discount_info {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #5bc0de;
   }
-  
+
   .buy_button {
-    background-color: #5cb85c;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.8rem;
   }
-  
-  .buy_button:hover {
-    background-color: #4cae4c;
-  }
-  
+}
