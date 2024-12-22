@@ -62,14 +62,14 @@ const devServer = {
     },
     progress: true, // Prints compilation progress in percentage in the browser.
   },
-  proxy: [
-    {
-      context: ['/service/api/api'],
-      target: 'https://sycret.ru',
-      changeOrigin: true,
-      logLevel: 'debug',
-    },
-  ],
+  // proxy: [
+  //   {
+  //     context: ['/service/api/api'],
+  //     target: 'https://sycret.ru',
+  //     changeOrigin: true,
+  //     logLevel: 'debug',
+  //   },
+  // ],
   port: 3000,
   devMiddleware: {
     writeToDisk: true,
