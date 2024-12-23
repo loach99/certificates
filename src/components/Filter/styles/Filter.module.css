@@ -26,10 +26,11 @@
     .filter_container {
         position: fixed;
         top: 20px;
-        width: calc(100% - 40px);
+        width: 100%;
         height: auto;
         z-index: 123;
-        max-width: 100%;
+        top: 0;
+        left: 0;
     }
 
 }

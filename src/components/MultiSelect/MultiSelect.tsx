@@ -1,12 +1,10 @@
 import React from "react";
 import { useState, useRef } from "react";
 import { default as ReactSelect, components, InputAction } from "react-select";
-
 export type Option = {
   value: number | string;
   label: string;
 };
-
 const MultiSelect = (props: any) => {
   const [selectInput, setSelectInput] = useState<string>("");
   const isAllSelected = useRef<boolean>(false);
@@ -120,15 +118,17 @@ const MultiSelect = (props: any) => {
   const customStyles = {
     multiValueLabel: (def: any) => ({
       ...def,
-      backgroundColor: "lightgray",
+      backgroundColor: "#fff",
+      border: "1px solid #5bc0de",
+      color: "#5bc0de",
     }),
     multiValueRemove: (def: any) => ({
       ...def,
-      backgroundColor: "lightgray",
+      backgroundColor: "#fff",
     }),
     valueContainer: (base: any) => ({
       ...base,
-      maxHeight: "65px",
+      height: "40px",
       overflow: "auto",
     }),
     option: (styles: any, { isSelected, isFocused }: any) => {

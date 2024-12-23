@@ -28,7 +28,7 @@ const Filter = ({ goodList, handleChexboxChange, setFilterArr }: IContainerProps
                         value={optionSelected}
                         isSelectAll={true}
                         menuPlacement={"bottom"}
-                        options={goodList.map((item) => ({ label: `на ${item.PRICE} руб`, value: item.ID }))} />
+                        options={goodList.map((item) => ({ label: `${item.PRICE.slice(0, -3)} руб`, value: item.ID }))} />
                 </div>
             </div>
             <div className={styles.developer_badge}>

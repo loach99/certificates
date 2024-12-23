@@ -1,6 +1,6 @@
 export const fetchGoodList = async () => {
     try {
-        const response = await fetch("/api/api", {
+        const response = await fetch("/service/api/api", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

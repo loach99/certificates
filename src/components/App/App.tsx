@@ -24,6 +24,7 @@ function App() {
       }
     }))
   }
+
   useEffect(() => {
     certificateFilter()
   }, [filterArr])
@@ -35,7 +36,7 @@ function App() {
       return [...prevSelectedIds, id];
     });
   }
-  console.log(filterArr)
+  
   return (
     <div className={styles.app}>
       {loading && <Loader />}
